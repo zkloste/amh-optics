@@ -14,7 +14,7 @@ collections:
     files:
       - label: "Home"
         name: "home"
-        file: "content/home.md"
+        file: "cms-content/home.md"
         fields:
           - label: "Home Slider"
             name: "homeSlider"
