@@ -1,12 +1,12 @@
 backend:
-  name: git-gateway
+  name: test-repo #git-gateway
   branch: main # Branch to update (optional; defaults to master)
 media_folder: public/img
-media_library:
-  name: cloudinary
-  config:
-    cloud_name: dyffwww1m
-    api_key: 573263727254786
+# media_library:
+#   name: cloudinary
+#   config:
+#     cloud_name: dyffwww1m
+#     api_key: 573263727254786
 public_folder: img
 collections:
   - name: "pages"
