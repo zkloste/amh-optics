@@ -1,0 +1,27 @@
+backend:
+  name: test-repo #git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+media_folder: public/img
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dyffwww1m
+    api_key: 573263727254786
+public_folder: img
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "content/home.md"
+        fields:
+          - label: "Home Slider"
+            name: "homeSlider"
+            widget: list
+            fields:
+              - { label: "Header", name: "header", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+              - { label: "Button Text", name: "buttonText", widget: "string" }
+              - { label: "Button Link", name: "buttonLink", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
