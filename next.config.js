@@ -1,5 +1,7 @@
+const withFonts = require("next-fonts");
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig = withFonts({
   reactStrictMode: true,
   swcMinify: true,
   webpack: (cfg) => {
@@ -10,6 +12,6 @@ const nextConfig = {
     });
     return cfg;
   },
-};
+});
 
 module.exports = nextConfig;

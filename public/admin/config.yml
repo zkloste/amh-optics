@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: test-repo #git-gateway
   branch: main # Branch to update (optional; defaults to master)
 media_folder: public/img
 # media_library:
@@ -25,3 +25,37 @@ collections:
               - { label: "Button Text", name: "buttonText", widget: "string" }
               - { label: "Button Link", name: "buttonLink", widget: "string" }
               - { label: "Image", name: "image", widget: "image" }
+      - label: "About"
+        name: "about"
+        file: "cms-content/about.md"
+        fields:
+          - label: "About Section"
+            name: "aboutSection"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - label: "Bullet Points"
+                name: "bulletPoints"
+                widget: list
+                field:
+                  {
+                    label: "Bullet Point",
+                    name: "bulletPoint",
+                    widget: "string",
+                  }
+
+            # widget: object
+            # fields:
+            #   - label: "Title"
+            #     name: "title"
+            #     widget: "string"
+            #   - label: "Description"
+            #     name: "description"
+            #     widget: "string" }
+            #   - label: "About List"
+            #     name: "aboutList"
+            #     widget: list
+            #     fields:
+            #       - { label: "Bullet", name: "bullet", widget: "string" }
