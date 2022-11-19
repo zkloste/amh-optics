@@ -1,0 +1,42 @@
+.bgWrap {
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.serviceImage {
+  height: 100vh;
+}
+
+.serviceDetails {
+  display: block;
+}
+.content {
+  padding: 15px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  .detailproject {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      color: white;
+      font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0 15px 0;
+      margin-bottom: 15px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      .tile {
+        font-weight: 600;
+      }
+    }
+  }
+}

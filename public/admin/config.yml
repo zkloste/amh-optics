@@ -45,17 +45,15 @@ collections:
                     name: "bulletPoint",
                     widget: "string",
                   }
-
-            # widget: object
-            # fields:
-            #   - label: "Title"
-            #     name: "title"
-            #     widget: "string"
-            #   - label: "Description"
-            #     name: "description"
-            #     widget: "string" }
-            #   - label: "About List"
-            #     name: "aboutList"
-            #     widget: list
-            #     fields:
-            #       - { label: "Bullet", name: "bullet", widget: "string" }
+      - label: "Services"
+        name: services
+        file: cms-content/services.md
+        fields:
+          - label: "Our Services"
+            name: servicesSection
+            widget: list
+            fields:
+              - { label: "Header", name: "header", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+              - { label: "Button Link", name: "buttonLink", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }

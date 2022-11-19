@@ -649,7 +649,7 @@ section {
     transition: all 0.3s ease;
     &::before {
       content: "\f053" !important;
-      font-family: Material Icons !important;
+      font-family: FontAwesome !important;
       font-style: normal;
       font-weight: normal;
       color: $black;
@@ -661,7 +661,7 @@ section {
     transition: all 0.3s ease;
     &::before {
       content: "\f054" !important;
-      font-family: Material Icons !important;
+      font-family: FontAwesome !important;
       font-style: normal;
       font-weight: normal;
       color: $black;
